@@ -1,0 +1,5 @@
+# The Lighthouse plugin is installed via the Netlify UI, which pins v4 (Node <20 only).
+# Declaring it here with the version from package.json overrides that pin so it runs on Node 20+,
+# which Next.js 16 requires.
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
